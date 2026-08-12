@@ -1,0 +1,7 @@
+# The raft/ package itself (consensus, log, simulated network, KV store,
+# linearizability checker) has ZERO third-party dependencies -- it only
+# uses the Python 3.11 standard library (asyncio, dataclasses, heapq,
+# json, struct). These two packages are only needed for the test runner
+# and for regenerating the benchmark/chaos-campaign figures.
+pytest==8.3.3
+matplotlib==3.10.9
